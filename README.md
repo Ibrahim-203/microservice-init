@@ -15,12 +15,6 @@ mon-projet-microservices/
 user-service/
 task-service/
 
-yaml
-Copier
-Modifier
-
----
-
 ## 🚀 Démarrage rapide
 
 ### Prérequis
@@ -40,19 +34,17 @@ npm install
 
 cd ../task-service
 npm install
+
 ⚙️ Variables d'environnement
 Chaque service utilise un fichier .env :
 
 user-service/.env
-ini
-Copier
-Modifier
+
 PORT=5000
 JWT_SECRET=supersecret
+
 task-service/.env
-ini
-Copier
-Modifier
+
 PORT=5001
 JWT_SECRET=supersecret
 (Le JWT_SECRET doit être identique si vous voulez que le token généré par user-service soit reconnu par task-service.)
@@ -62,19 +54,15 @@ Dans deux terminaux séparés :
 
 Terminal 1 (user-service)
 
-bash
-Copier
-Modifier
 cd user-service
 node server.js
 Terminal 2 (task-service)
 
-bash
-Copier
-Modifier
 cd task-service
 node server.js
+
 📡 API Endpoints
+
 🎯 User Service
 POST /api/auth/register
 
